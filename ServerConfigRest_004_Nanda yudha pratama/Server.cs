@@ -15,7 +15,7 @@ namespace ServerConfigRest_004_Nanda_yudha_pratama
             ServiceHost hostObj = null;
             try
             {
-                hostObj = new ServiceHost(typeof(Matematika));
+                hostObj = new ServiceHost(typeof(TI_UMY));
                 hostObj.Open();
                 Console.WriteLine("Server is Ready!!!");
                 Console.ReadLine();
@@ -34,7 +34,7 @@ namespace ServerConfigRest_004_Nanda_yudha_pratama
             ServiceHost hostObj = null;
             try
             {
-                hostObj = new ServiceHost(typeof(Matematika));
+                hostObj = new ServiceHost(typeof(TI_UMY));
                 hostObj.Open();
                 Console.WriteLine("Server is Off!!!");
                 Console.ReadLine();

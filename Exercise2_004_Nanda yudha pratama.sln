@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRest_004_Nanda yudha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerConfigRest_004_Nanda yudha pratama", "ServerConfigRest_004_Nanda yudha pratama\ServerConfigRest_004_Nanda yudha pratama.csproj", "{6D3819B6-676B-4552-9A8A-44790A86F855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRest_004_Nanda yudha pratama", "ClientRest_004_Nanda yudha pratama\ClientRest_004_Nanda yudha pratama.csproj", "{0B68AA0E-DABE-4750-88E7-591874E77614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6D3819B6-676B-4552-9A8A-44790A86F855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3819B6-676B-4552-9A8A-44790A86F855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D3819B6-676B-4552-9A8A-44790A86F855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B68AA0E-DABE-4750-88E7-591874E77614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B68AA0E-DABE-4750-88E7-591874E77614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B68AA0E-DABE-4750-88E7-591874E77614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B68AA0E-DABE-4750-88E7-591874E77614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
