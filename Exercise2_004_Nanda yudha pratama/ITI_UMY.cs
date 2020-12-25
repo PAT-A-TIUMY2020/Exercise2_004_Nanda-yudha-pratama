@@ -24,6 +24,13 @@ namespace Exercise2_004_Nanda_yudha_pratama
         [WebInvoke(Method = "POST", UriTemplate = "Mahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string CreateMahasiswa(Mahasiswa mhs);
 
+        [OperationContract]
+        [WebInvoke(Method = "DELETE", UriTemplate = "DeleteMahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string DeleteMahasiswa(string nim);
+
+        [OperationContract]
+        [WebInvoke(Method = "PUT", UriTemplate = "UpdateMahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string UpdateMahasiswaByNIM(Mahasiswa mhs);
     }
 
     [DataContract]

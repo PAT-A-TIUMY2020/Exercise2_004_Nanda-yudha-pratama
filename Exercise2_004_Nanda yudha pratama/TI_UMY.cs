@@ -101,5 +101,54 @@ namespace Exercise2_004_Nanda_yudha_pratama
 
             return mhs;
         }
+
+        public string DeleteMahasiswa(string nim)
+        {
+            SqlConnection sqlcon = new SqlConnection("Data Source=LAPTOP-54NOARJ3;Initial Catalog=\"TI UMY\";Persist Security Info=True;User ID=sa;Password=123");
+            string query = string.Format("DELETE from dbo.Mahasiswa where NIM = '{0}'", nim);
+            SqlCommand cmd = new SqlCommand(query, sqlcon);
+            int result = 0;
+            string a = "Gagal";
+
+            try
+            {
+                sqlcon.Open();
+                result = cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            catch (Exception ex)
+            {
+                a = ex.ToString();
+            }
+
+            if (result != 0)
+            {
+                a = "Sukses";
+            }
+            return a;
+        }
+
+        public string UpdateMahasiswaByNIM(Mahasiswa mhs)
+        {
+            SqlConnection sqlcon = new SqlConnection("Data Source=LAPTOP-54NOARJ3;Initial Catalog=\"TI UMY\";Persist Security Info=True;User ID=sa;Password=123");
+            string query = string.Format("Update dbo.Mahasiswa set Nama = '{0}', Prodi = '{1}', Angkatan = '{2}' where NIM = '{3}'", mhs.nama, mhs.prodi, mhs.angkatan, mhs.nim);
+            SqlCommand cmd = new SqlCommand(query, sqlcon);
+            string x = "Gagal";
+
+            try
+            {
+                sqlcon.Open();
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+                x = "Sukses";
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(query);
+            }
+            return x;
+        }
+
     }
 }
